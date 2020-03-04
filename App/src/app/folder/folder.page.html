@@ -1,18 +1,24 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar >
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-buttons start>
-      <ion-button only-icon>
+      <ion-button icon-only>
         <ion-icon name="cafe-sharp"></ion-icon>
       </ion-button>
     </ion-buttons>
+    <ion-buttons start>
+      
+    </ion-buttons>
     <ion-title>{{ folder }}</ion-title>
-     
+    <br>     
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
- 
+  <ion-item>
+    <ion-input placeholder="data"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" routerLink="/web">Go page 2</ion-button>
+  
 </ion-content>
